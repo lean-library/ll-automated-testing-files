@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Accordion Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .accordion .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .accordion .content.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="accordion-container"></div>
+
+<script>
+// Data array
+const data = [
+    {
+        "feature": "generalNotifications",
+        "scenario": "As a user with Futures Onboarding & Survey notifications, I should see Futures Onboarding notification for SPECIFIC URL only - NOT subpages",
+        "steps": [
+            "GIVEN I select the institution: Automated testing",
+            "AND I have Futures Onboarding for a resource asset",
+            "AND the notification is configured for a specific URL, NOT subpages",
+            "WHEN I visit the resource",
+            "THEN I see the Futures Onboarding option",
+            "WHEN I visit a subpage of the resource",
+            "THEN I see the Futures Onboarding option"
+        ]
+    }
+];
+
+// Function to create the accordion
+function createAccordion(data) {
+    const container = document.getElementById("accordion-container");
+
+    data.forEach((item, index) => {
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        summary.textContent = `${item.feature} - ${item.scenario}`;
+
+        const contentDiv = document.createElement("div");
+        contentDiv.className = "content";
+
+        item.steps.forEach(step => {
+            const stepP = document.createElement("p");
+            stepP.textContent = step;
+            contentDiv.appendChild(stepP);
+        });
+
+        details.appendChild(summary);
+        details.appendChild(contentDiv);
+        container.appendChild(details);
+    });
+}
+
+// Call createAccordion on window load
+window.onload = function() {
+    createAccordion(data);
+};
+</script>
+</body>
+</html>
