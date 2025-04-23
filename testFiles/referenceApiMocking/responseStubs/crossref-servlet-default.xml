@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Based on response from https://doi.crossref.org/servlet/query?usr=...&pwd=...&format=UNIXREF&type=d&qdata=10.1128/aem.02091-21 -->
+<doi_records>
+  <doi_record owner="10.1128" timestamp="2022-04-12 09:06:12">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Applied and Environmental Microbiology</full_title>
+          <abbrev_title>Appl Environ Microbiol</abbrev_title>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <month>04</month>
+            <day>12</day>
+            <year>2022</year>
+          </publication_date>
+          <journal_volume>
+            <volume>88</volume>
+          </journal_volume>
+          <issue>7</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Environmental Potential for Microbial {{articleTitle}}</title>
+          </titles>
+          <contributors>
+            <person_name contributor_role="author" sequence="first">
+              <given_name>Kira L.</given_name>
+              <surname>Goff</surname>
+              <affiliation>Department of Biology, University of Waterloo, Waterloo, Ontario, Canada</affiliation>
+              <ORCID authenticated="true">https://orcid.org/0000-0002-1913-3968</ORCID>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Laura A.</given_name>
+              <surname>Hug</surname>
+              <affiliation>Department of Biology, University of Waterloo, Waterloo, Ontario, Canada</affiliation>
+              <ORCID authenticated="true">https://orcid.org/0000-0001-5974-9428</ORCID>
+            </person_name>
+            <person_name contributor_role="editor" sequence="additional">
+              <given_name>Martha</given_name>
+              <surname>Vives</surname>
+            </person_name>
+          </contributors>
+          <abstract abstract-type="synopsis">
+            <p>New regulatory limits for 1,4-dioxane in groundwater have been proposed or adopted in many countries, including the United States and Canada, generating a direct need for remediation options as well as better tools for assessing the fate of dioxane in an environment. A comprehensive suite of biomarkers associated with dioxane degradation was identified and then leveraged to examine the global potential for dioxane degradation in natural and engineered environments.</p>
+          </abstract>
+          <abstract>
+            <title>ABSTRACT</title>
+            <p>
+              1,4-Dioxane (dioxane) is an emerging contaminant of concern for which bioremediation is seen as a promising solution. To date, eight distinct gene families have been implicated in dioxane degradation, though only dioxane monooxygenase (DXMO) from
+              <named-content content-type="genus-species">Pseudonocardia dioxanivorans</named-content>
+              is routinely used as a biomarker in environmental surveys. In order to assess the functional and taxonomic diversity of bacteria capable of dioxane degradation, we collated existing, poorly-organized information on known biodegraders to create a curated suite of biomarkers with confidence levels for assessing 1,4-dioxane degradation potential. The characterized enzyme systems for dioxane degradation are frequently found on mobile elements, and we identified that many of the curated biomarkers are associated with other hallmarks of genomic rearrangements, indicating lateral gene transfer plays a role in dissemination of this trait. This is contrasted by the extremely limited phylogenetic distribution of known dioxane degraders, where all representatives belong to four classes within three bacterial phyla. Based on the curated set of expanded biomarkers, a search of more than 11,000 publicly available metagenomes identified a sparse and taxonomically limited distribution of potential dioxane degradation proteins. Our work provides an important and necessary structure to the current knowledge base for dioxane degradation and clarifies the potential for natural attenuation of dioxane across different environments. It further highlights a disconnect between the apparent mobility of these gene families and their limited distributions, indicating dioxane degradation may be difficult to integrate into a microorganism’s metabolism.
+            </p>
+            <p>
+              <bold>IMPORTANCE</bold>
+              New regulatory limits for 1,4-dioxane in groundwater have been proposed or adopted in many countries, including the United States and Canada, generating a direct need for remediation options as well as better tools for assessing the fate of dioxane in an environment. A comprehensive suite of biomarkers associated with dioxane degradation was identified and then leveraged to examine the global potential for dioxane degradation in natural and engineered environments. We identified consistent differences in the dioxane-degrading gene families associated with terrestrial, aquatic, and wetland environments, indicating reliance on a single biomarker for assessing natural attenuation of dioxane is likely to miss key players. Most environments do not currently host the capacity for dioxane degradation—the sparse distribution of dioxane degradation potential highlights the need for bioaugmentation approaches over biostimulation of naturally occurring microbial communities.
+            </p>
+          </abstract>
+          <publication_date media_type="print">
+            <month>04</month>
+            <day>12</day>
+            <year>2022</year>
+          </publication_date>
+          <publisher_item>
+            <item_number item_number_type="article_number">e02091-21</item_number>
+            <identifier id_type="doi">{{doi}}</identifier>
+          </publisher_item>
+          <crossmark>
+            <crossmark_version>2</crossmark_version>
+            <crossmark_policy>10.1128/asmj-crossmark-policy-page</crossmark_policy>
+            <crossmark_domains>
+              <crossmark_domain>
+                <domain>journals.asm.org</domain>
+              </crossmark_domain>
+            </crossmark_domains>
+            <crossmark_domain_exclusive>true</crossmark_domain_exclusive>
+            <custom_metadata>
+              <assertion group_label="Publication History" group_name="publication_history" label="Received" name="received" order="0">2021-10-22</assertion>
+              <assertion group_label="Publication History" group_name="publication_history" label="Accepted" name="accepted" order="1">2022-02-03</assertion>
+              <assertion group_label="Publication History" group_name="publication_history" label="Published" name="published" order="2">2022-03-17</assertion>
+              <program name="fundref">
+                <assertion name="fundgroup">
+                  <assertion name="funder_name">
+                    Gouvernement du Canada | Natural Sciences and Engineering Research Council of Canada
+                    <assertion name="funder_identifier">https://doi.org/10.13039/501100000038</assertion>
+                  </assertion>
+                  <assertion name="award_number">530092-18</assertion>
+                </assertion>
+                <assertion name="fundgroup">
+                  <assertion name="funder_name">
+                    Imperial Oil Limited
+                    <assertion name="funder_identifier">https://doi.org/10.13039/100013216</assertion>
+                  </assertion>
+                  <assertion name="award_number">UW #075250</assertion>
+                </assertion>
+              </program>
+              <program name="AccessIndicators">
+                <license_ref applies_to="vor">https://doi.org/10.1128/ASMCopyrightv2</license_ref>
+                <license_ref applies_to="tdm">https://journals.asm.org/non-commercial-tdm-license</license_ref>
+              </program>
+            </custom_metadata>
+          </crossmark>
+          <doi_data>
+            <doi>{{doi}}</doi>
+            <resource>https://journals.asm.org/doi/{{doi}}</resource>
+            <collection property="crawler-based">
+              <item crawler="iParadigms">
+                <resource>https://journals.asm.org/doi/pdf/{{doi}}</resource>
+              </item>
+            </collection>
+            <collection property="text-mining">
+              <item>
+                <resource mime_type="application/pdf">https://journals.asm.org/doi/pdf/{{doi}}</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="e_1_3_3_3_2">
+              <doi>10.1016/0041-008X(74)90099-4</doi>
+            </citation>
+            <citation key="e_1_3_3_4_2">
+              <doi>10.1016/j.scitotenv.2019.06.443</doi>
+            </citation>
+            <citation key="e_1_3_3_5_2">
+              <doi>10.1007/s10532-015-9753-2</doi>
+            </citation>
+            <citation key="e_1_3_3_6_2">
+              <doi>10.1002/ieam.1306</doi>
+            </citation>
+            <citation key="e_1_3_3_8_2">
+              <doi>10.1038/s41587-020-0501-8</doi>
+            </citation>
+            <citation key="e_1_3_3_9_2">
+              <doi>10.1128/AEM.00160-06</doi>
+            </citation>
+            <citation key="e_1_3_3_10_2">
+              <doi>10.1007/s00253-020-10376-7</doi>
+            </citation>
+            <citation key="e_1_3_3_11_2">
+              <doi>10.1128/aem.60.12.4527-4530.1994</doi>
+            </citation>
+            <citation key="e_1_3_3_12_2">
+              <doi>10.1007/s10532-008-9240-0</doi>
+            </citation>
+            <citation key="e_1_3_3_13_2">
+              <doi>10.1128/AEM.00067-12</doi>
+            </citation>
+            <citation key="e_1_3_3_14_2">
+              <doi>10.1099/ijs.0.63085-0</doi>
+            </citation>
+            <citation key="e_1_3_3_15_2">
+              <doi>10.1021/es060714v</doi>
+            </citation>
+            <citation key="e_1_3_3_16_2">
+              <doi>10.1021/es0705745</doi>
+            </citation>
+            <citation key="e_1_3_3_17_2">
+              <doi>10.1128/AEM.04162-13</doi>
+            </citation>
+            <citation key="e_1_3_3_18_2">
+              <doi>10.1021/acs.estlett.7b00504</doi>
+            </citation>
+            <citation key="e_1_3_3_19_2">
+              <doi>10.1021/acs.estlett.7b00456</doi>
+            </citation>
+            <citation key="e_1_3_3_20_2">
+              <doi>10.1128/AEM.01163-20</doi>
+            </citation>
+            <citation key="e_1_3_3_21_2">
+              <doi>10.1021/es402228x</doi>
+            </citation>
+            <citation key="e_1_3_3_22_2">
+              <doi>10.1128/JB.184.2.344-349.2002</doi>
+            </citation>
+            <citation key="e_1_3_3_23_2">
+              <doi>10.1128/aem.61.9.3336-3346.1995</doi>
+            </citation>
+            <citation key="e_1_3_3_24_2">
+              <doi>10.1007/s10532-017-9808-7</doi>
+            </citation>
+            <citation key="e_1_3_3_25_2">
+              <doi>10.1128/AEM.01697-07</doi>
+            </citation>
+            <citation key="e_1_3_3_26_2">
+              <doi>10.1021/ez400176h</doi>
+            </citation>
+            <citation key="e_1_3_3_27_2">
+              <doi>10.1007/s10532-016-9772-7</doi>
+            </citation>
+            <citation key="e_1_3_3_28_2">
+              <doi>10.1007/s00239-002-2414-1</doi>
+            </citation>
+            <citation key="e_1_3_3_29_2">
+              <doi>10.1111/j.1462-2920.2006.01015.x</doi>
+            </citation>
+            <citation key="e_1_3_3_30_2">
+              <doi>10.1021/acs.biochem.5b00198</doi>
+            </citation>
+            <citation key="e_1_3_3_31_2">
+              <doi>10.1111/febs.12070</doi>
+            </citation>
+            <citation key="e_1_3_3_32_2">
+              <doi>10.1093/nar/gkz246</doi>
+            </citation>
+            <citation key="e_1_3_3_33_2">
+              <doi>10.1093/gbe/evs100</doi>
+            </citation>
+            <citation key="e_1_3_3_34_2">
+              <doi>10.1038/nrg3456</doi>
+            </citation>
+            <citation key="e_1_3_3_35_2">
+              <doi>10.1093/nar/gkh340</doi>
+            </citation>
+            <citation key="e_1_3_3_36_2">
+              <doi>10.1371/journal.pone.0009490</doi>
+            </citation>
+            <citation key="e_1_3_3_37_2">
+              <doi>10.1101/gr.2289704</doi>
+            </citation>
+            <citation key="e_1_3_3_38_2">
+              <doi>10.1371/journal.pcbi.1002195</doi>
+            </citation>
+            <citation key="e_1_3_3_39_2">
+              <doi>10.1038/nmeth.3176</doi>
+            </citation>
+            <citation key="e_1_3_3_40_2">
+              <doi>10.1371/journal.pcbi.1004957</doi>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>
