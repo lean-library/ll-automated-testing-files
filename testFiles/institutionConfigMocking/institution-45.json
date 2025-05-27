@@ -1,0 +1,258 @@
+{
+  "id": "4",
+  "name": "Jan Thij",
+  "proxy": {
+    "prefixUrl": "",
+    "domain": "yorksj.idm.oclc.org"
+  },
+  "access": [
+    {
+      "type": "openAthens",
+      "prefixUrl": "https://go.openathens.net/redirector/unimelb.edu.au?url=",
+      "automatic": false
+    },
+    {
+      "type": "openAthens",
+      "prefixUrl": "https://go.openathens.net/redirector/unimelb.edu.au?url=",
+      "domain": "eu1.proxy.openathens.net"
+    },
+    {
+      "type": "shibboleth",
+      "prefixUrl": "https://staging.leanlibrary.com/index.php?r=shibboleth%2Fredirector%2Fredirect&instituteId=4&returnUrl="
+    }
+  ],
+  "text": {
+    "footer": "<p>This extension is brought to you by The University of Manchester Library. Email the Resources Helpdesk for support.</p>"
+  },
+  "styling": {
+    "logo": "",
+    "stylesheet": "https://cdn-staging.leanlibrary.com/assets/63a12034/4.css"
+  },
+  "searchEnhancers": {
+    "googleScholar": {
+      "type": "googleScholar",
+      "redirectId": "6833560761083429746",
+      "domain": "^(scholar\\.google\\.)(.*)(\/scholar)(\\?|$)",
+      "redirectOnCampus": false,
+      "parameter": "inst",
+      "redirectOnce": false,
+      "redirectOption": "onAndOffCampus",
+      "parameters": {
+        "inst": "6833560761083429746"
+      }
+    },
+    "pubMed": {
+      "type": "pubMed",
+      "redirectId": "igbumllib",
+      "domain": "((pubmed|pmlegacy)\\.ncbi\\.nlm\\.nih\\.gov\/)",
+      "redirectOnCampus": false,
+      "parameter": "otool",
+      "redirectOnce": true,
+      "redirectOption": "onAndOffCampus",
+      "parameters": {
+        "otool": "igbumllib"
+      }
+    }
+  },
+  "alternatives": {
+    "enabled": true,
+    "openAccess": {
+      "enabled": true,
+      "accessPossiblePopupsEnabled": false,
+      "priority": false,
+      "providers": [
+        {
+          "id": "unpaywall"
+        },
+        {
+          "id": "core"
+        }
+      ]
+    },
+    "holdingInformationUrl": "https://staging.leanlibrary.com/index.php?r=api%2Fapi%2FholdingInformation",
+    "ebookFinder": {
+      "enabled": true,
+      "useProxy": false
+    },
+    "fullTextFinder": {
+      "enabled": true,
+      "url": "https://staging.leanlibrary.com/index.php?r=api%2Fapi%2Falternatives",
+      "path": "$.fullTextUrl",
+      "params": {
+        "issn": "issn",
+        "isbn": "isbn",
+        "instituteId": "instituteId",
+        "doi": "doi",
+        "journalTitle": "journalTitle",
+        "articleTitle": "articleTitle",
+        "author": "author",
+        "publisher": "publisher",
+        "startPage": "startPage",
+        "pages": "pages",
+        "volume": "volume",
+        "issue": "issue",
+        "issued": "publicationDate"
+      }
+    },
+    "orderForm": {
+      "enabled": true,
+      "url": "https://library.unimelb.edu.au/borrowing/borrowing_at_other_unis/interlibrary-loans/relais2/relais?group=patron&FT=R&genre=article&LS=VU",
+      "params": {
+        "journalTitle": "title",
+        "articleTitle": "atitle",
+        "author": "aulast",
+        "publisher": "publisher",
+        "startPage": "spage",
+        "pages": "pages",
+        "volume": "volume",
+        "issue": "issue",
+        "doi": "doi",
+        "issn": "issn",
+        "isbn": "isbn",
+        "issued": "issued"
+      },
+      "ebookChaptersEnabled": false
+    },
+    "openAccessPriority": 0
+  },
+  "autoHide": [],
+  "closePopup": {
+    "timeOut": false
+  },
+  "defaultSettings": {
+    "autoRedirect": {
+      "value": false,
+      "force": false
+    },
+    "showTimer": {
+      "value": true,
+      "force": false
+    }
+  },
+  "enableOnCampusCheck": false,
+  "enableIpRangeValidation": true,
+  "showExtensionSettings": true,
+  "validateOnCampusUrl": "https://www.jstor.org/",
+  "validateOnCampusResponse": "Access provided by",
+  "ipRanges": [
+    "130.88.0.0/20",
+    "130.88.16.0/21",
+    "130.88.24.0/24",
+    "130.88.25.0/25",
+    "130.88.25.128/26",
+    "130.88.25.192/27",
+    "130.88.26.0/23",
+    "130.88.28.0/22",
+    "130.88.32.0/19",
+    "130.88.64.0/18",
+    "130.88.128.0/17",
+    "194.36.2.0/24",
+    "194.36.3.0/24"
+  ],
+  "popupOrder": [
+    [
+      "priorityAssist"
+    ],
+    [
+      "customRedirected"
+    ],
+    [
+      "fullTextFinder"
+    ],
+    [
+      "openAccess"
+    ],
+    [
+      "ebookFinder"
+    ],
+    [
+      "ebookFinderMultiple"
+    ],
+    [
+      "orderForm"
+    ],
+    [
+      "onCampusSupported"
+    ],
+    [
+      "proxyAccessPossible",
+      "openAthensAccessPossible",
+      "shibbolethAccessPossible"
+    ],
+    [
+      "assist"
+    ],
+    [
+      "openAthensLoginRequired"
+    ],
+    [
+      "googleScholarSearchEnhanced",
+      "pubMedSearchEnhanced"
+    ],
+    [
+      "onCampusNotSupported"
+    ],
+    [
+      "autoRedirected"
+    ],
+    [
+      "proxyAccessAchieved",
+      "openAthensAccessAchieved",
+      "shibbolethAccessAchieved"
+    ],
+    [
+      "fullTextFinderAchieved"
+    ],
+    [
+      "openAccessAchieved"
+    ],
+    [
+      "ebookFinderAchieved"
+    ],
+    [
+      "onboardingTutorial"
+    ],
+    [
+      "notSupported"
+    ]
+  ],
+  "contentPopups": [
+    "assist",
+    "autoRedirected",
+    "customRedirected",
+    "ebookFinder",
+    "fullTextFinder",
+    "fullTextFinderAchieved",
+    "googleScholarSearchEnhanced",
+    "openAccess",
+    "openAccessAchieved",
+    "openAthensAccessPossible",
+    "orderForm",
+    "priorityAssist",
+    "proxyAccessPossible",
+    "pubMedSearchEnhanced",
+    "shibbolethAccessPossible"
+  ],
+  "meta": {
+    "generatedAt": "2025-05-27 19:33:52",
+    "version": 3
+  },
+  "onboardingTutorialUrl": "https://leanlibrary.zendesk.com/hc/en-gb/sections/17608202984093-Getting-started-as-an-Extension-User",
+  "academicBrowserOnboardingTutorialUrl": "https://www.easy-lms.com/library-access-in-the-academic-browser/course-52669",
+  "searchEngines": [
+    {
+      "id": 48,
+      "name": "Search Library Search (University of Manchester)",
+      "url": "https://www.librarysearch.manchester.ac.uk/discovery/search?query=any,contains,{search-term}&tab=Everything&search_scope=MyInst_and_CI&vid=44MAN_INST:MU_NUI&offset=0"
+    }
+  ],
+  "scite": {
+    "enabled": false,
+    "googleScholarEnabled": false,
+    "elsewhereEnabled": false
+  },
+  "zotero": {
+    "enabled": true
+  },
+  "enableLogging": true
+}
