@@ -1,0 +1,259 @@
+{
+  "id": "80",
+  "name": "Automated testing",
+  "proxy": {
+    "prefixUrl": "https://manchester.idm.oclc.org/login?url=",
+    "domain": "manchester.idm.oclc.org"
+  },
+  "access": [
+    {
+      "type": "proxy",
+      "prefixUrl": "https://manchester.idm.oclc.org/login?url=",
+      "domain": "manchester.idm.oclc.org",
+      "han": false
+    },
+    {
+      "type": "openAthens",
+      "prefixUrl": "https://go.openathens.net/redirector/leanlibrary.com?url=",
+      "automatic": false
+    },
+    {
+      "type": "openAthens",
+      "prefixUrl": "https://go.openathens.net/redirector/leanlibrary.com?url=",
+      "domain": "proxy.openathens.net"
+    },
+    {
+      "type": "shibboleth",
+      "prefixUrl": "http://www.csic.debiblio.com/login?url="
+    }
+  ],
+  "text": {
+    "footer": "<p>Signature for Automated testing institution <a class=\"button\" title=\"Ggl\" href=\"https://google.com\" target=\"_blank\" rel=\"noopener\">click here</a></p>"
+  },
+  "styling": {
+    "logo": "https://cdn-dev.leanlibrary.app/library/80/assets/Ni5Zpwkiojhl0B7PLfjuRJKwtTxnmN6mwtVuook5.png",
+    "stylesheet": "https://cdn-dev.leanlibrary.app/library/80/assets/V5R2t47EZCujRQwjT6OS2vcy6l6631L5NHwdI47R1672757845.css"
+  },
+  "searchEnhancers": {
+    "googleScholar": {
+      "type": "googleScholar",
+      "redirectId": "5191836076048716475t",
+      "domain": "^(scholar\\.google\\.)(.*)(\/scholar)(\\?|$)",
+      "redirectOnCampus": false,
+      "parameter": "inst",
+      "redirectOnce": false,
+      "redirectOption": "onAndOffCampus",
+      "parameters": {
+        "inst": "5191836076048716475t"
+      }
+    },
+    "pubMed": {
+      "type": "pubMed",
+      "redirectId": "iuknhsesknlib",
+      "domain": "((pubmed|pmlegacy)\\.ncbi\\.nlm\\.nih\\.gov\/)",
+      "redirectOnCampus": false,
+      "parameter": "otool",
+      "redirectOnce": true,
+      "redirectOption": "onAndOffCampus",
+      "parameters": {
+        "otool": "iuknhsesknlib",
+        "holding": "holding",
+        "myncbishare": "myncbishare"
+      }
+    }
+  },
+  "alternatives": {
+    "enabled": true,
+    "openAccess": {
+      "enabled": true,
+      "accessPossiblePopupsEnabled": false,
+      "priority": false,
+      "providers": [
+        {
+          "id": "unpaywall"
+        },
+        {
+          "id": "core"
+        }
+      ]
+    },
+    "holdingInformationUrl": "https://staging.leanlibrary.com/index.php?r=api%2Fapi%2FholdingInformation",
+    "ebookFinder": {
+      "enabled": true,
+      "useProxy": false
+    },
+    "fullTextFinder": {
+      "enabled": true,
+      "url": "https://staging.leanlibrary.com/index.php?r=api%2Fapi%2Falternatives",
+      "path": "$.fullTextUrl",
+      "params": {
+        "issn": "issn",
+        "isbn": "isbn",
+        "instituteId": "instituteId",
+        "doi": "doi",
+        "journalTitle": "journalTitle",
+        "articleTitle": "articleTitle",
+        "author": "author",
+        "publisher": "publisher",
+        "startPage": "startPage",
+        "pages": "pages",
+        "volume": "volume",
+        "issue": "issue",
+        "issued": "publicationDate"
+      }
+    },
+    "orderForm": {
+      "enabled": true,
+      "url": "https://tools.leanlibrary.com/ill/index.php?client=ll211&formType=doi",
+      "params": {
+        "journalTitle": "title",
+        "articleTitle": "atitle",
+        "author": "aulast",
+        "publisher": "publisher",
+        "startPage": "spage",
+        "pages": "pages",
+        "volume": "volume",
+        "issue": "issue",
+        "doi": "doi",
+        "issn": "issn",
+        "isbn": "isbn",
+        "issued": "issued"
+      },
+      "ebookChaptersEnabled": true
+    },
+    "openAccessPriority": 0
+  },
+  "autoHide": [],
+  "closePopup": {
+    "timeOut": false
+  },
+  "defaultSettings": {
+    "autoRedirect": {
+      "value": false,
+      "force": false
+    },
+    "showTimer": {
+      "value": true,
+      "force": false
+    }
+  },
+  "enableOnCampusCheck": false,
+  "enableIpRangeValidation": true,
+  "showExtensionSettings": true,
+  "validateOnCampusUrl": "https://www.jstor.org/",
+  "validateOnCampusResponse": "Access provided by",
+  "ipRanges": [
+    "1.1.1.1/32"
+  ],
+  "popupOrder": [
+    [
+      "priorityAssist"
+    ],
+    [
+      "customRedirected"
+    ],
+    [
+      "fullTextFinder"
+    ],
+    [
+      "openAccess"
+    ],
+    [
+      "ebookFinder"
+    ],
+    [
+      "ebookFinderMultiple"
+    ],
+    [
+      "orderForm"
+    ],
+    [
+      "onCampusSupported"
+    ],
+    [
+      "proxyAccessPossible",
+      "openAthensAccessPossible",
+      "shibbolethAccessPossible"
+    ],
+    [
+      "assist"
+    ],
+    [
+      "openAthensLoginRequired"
+    ],
+    [
+      "googleScholarSearchEnhanced",
+      "pubMedSearchEnhanced"
+    ],
+    [
+      "onCampusNotSupported"
+    ],
+    [
+      "autoRedirected"
+    ],
+    [
+      "proxyAccessAchieved",
+      "openAthensAccessAchieved",
+      "shibbolethAccessAchieved"
+    ],
+    [
+      "fullTextFinderAchieved"
+    ],
+    [
+      "openAccessAchieved"
+    ],
+    [
+      "ebookFinderAchieved"
+    ],
+    [
+      "onboardingTutorial"
+    ],
+    [
+      "notSupported"
+    ]
+  ],
+  "contentPopups": [
+    "assist",
+    "autoRedirected",
+    "customRedirected",
+    "ebookFinder",
+    "fullTextFinder",
+    "fullTextFinderAchieved",
+    "googleScholarSearchEnhanced",
+    "openAccess",
+    "openAccessAchieved",
+    "openAthensAccessPossible",
+    "orderForm",
+    "priorityAssist",
+    "proxyAccessPossible",
+    "pubMedSearchEnhanced",
+    "shibbolethAccessPossible"
+  ],
+  "meta": {
+    "generatedAt": "2025-05-27 17:30:10",
+    "version": 3
+  },
+  "onboardingTutorialUrl": "https://leanlibrary.zendesk.com/hc/en-gb/sections/17608202984093-Getting-started-as-an-Extension-User",
+  "academicBrowserOnboardingTutorialUrl": "https://www.easy-lms.com/library-access-in-the-academic-browser/course-52669",
+  "searchEngines": [
+    {
+      "id": 53,
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q={search-term}"
+    },
+    {
+      "id": 55,
+      "name": "Search Library Discovery",
+      "url": "https://scholar.google.com/scholar?q={search-term}"
+    }
+  ],
+  "scite": {
+    "enabled": true,
+    "googleScholarEnabled": true,
+    "elsewhereEnabled": true
+  },
+  "zotero": {
+    "enabled": false
+  },
+  "enableLogging": true
+}

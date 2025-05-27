@@ -1,0 +1,187 @@
+{
+  "id": "91",
+  "name": "Automated testing 8",
+  "proxy": {
+    "prefixUrl": "https://manchester.idm.oclc.org/login?url=",
+    "domain": "manchester.idm.oclc.org"
+  },
+  "access": [
+    {
+      "type": "proxy",
+      "prefixUrl": "https://manchester.idm.oclc.org/login?url=",
+      "domain": "manchester.idm.oclc.org",
+      "han": false
+    }
+  ],
+  "text": [],
+  "styling": {
+    "logo": "",
+    "stylesheet": "https://cdn-staging.leanlibrary.com/assets/47d7ce7e/91.css"
+  },
+  "searchEnhancers": [],
+  "alternatives": {
+    "enabled": true,
+    "openAccess": {
+      "enabled": true,
+      "accessPossiblePopupsEnabled": true,
+      "priority": false,
+      "providers": [
+        {
+          "id": "unpaywall"
+        },
+        {
+          "id": "core"
+        }
+      ]
+    },
+    "holdingInformationUrl": "https://staging.leanlibrary.com/index.php?r=api%2Fapi%2FholdingInformation",
+    "ebookFinder": {
+      "enabled": true,
+      "useProxy": false
+    },
+    "fullTextFinder": {
+      "enabled": true,
+      "url": "https://staging.leanlibrary.com/index.php?r=api%2Fapi%2Falternatives",
+      "path": "$.fullTextUrl",
+      "params": {
+        "issn": "issn",
+        "isbn": "isbn",
+        "instituteId": "instituteId",
+        "doi": "doi",
+        "journalTitle": "journalTitle",
+        "articleTitle": "articleTitle",
+        "author": "author",
+        "publisher": "publisher",
+        "startPage": "startPage",
+        "pages": "pages",
+        "volume": "volume",
+        "issue": "issue",
+        "issued": "publicationDate"
+      }
+    },
+    "orderForm": {
+      "enabled": false
+    },
+    "openAccessPriority": 0
+  },
+  "autoHide": [],
+  "closePopup": {
+    "timeOut": false
+  },
+  "defaultSettings": {
+    "autoRedirect": {
+      "value": false,
+      "force": false
+    },
+    "showTimer": {
+      "value": true,
+      "force": false
+    }
+  },
+  "enableOnCampusCheck": true,
+  "enableIpRangeValidation": true,
+  "showExtensionSettings": true,
+  "validateOnCampusUrl": "https://www.jstor.org/",
+  "validateOnCampusResponse": "Access provided by",
+  "ipRanges": [],
+  "popupOrder": [
+    [
+      "priorityAssist"
+    ],
+    [
+      "customRedirected"
+    ],
+    [
+      "fullTextFinder"
+    ],
+    [
+      "openAccess"
+    ],
+    [
+      "ebookFinder"
+    ],
+    [
+      "ebookFinderMultiple"
+    ],
+    [
+      "orderForm"
+    ],
+    [
+      "onCampusSupported"
+    ],
+    [
+      "proxyAccessPossible",
+      "openAthensAccessPossible",
+      "shibbolethAccessPossible"
+    ],
+    [
+      "assist"
+    ],
+    [
+      "openAthensLoginRequired"
+    ],
+    [
+      "googleScholarSearchEnhanced",
+      "pubMedSearchEnhanced"
+    ],
+    [
+      "onCampusNotSupported"
+    ],
+    [
+      "autoRedirected"
+    ],
+    [
+      "proxyAccessAchieved",
+      "openAthensAccessAchieved",
+      "shibbolethAccessAchieved"
+    ],
+    [
+      "fullTextFinderAchieved"
+    ],
+    [
+      "openAccessAchieved"
+    ],
+    [
+      "ebookFinderAchieved"
+    ],
+    [
+      "onboardingTutorial"
+    ],
+    [
+      "notSupported"
+    ]
+  ],
+  "contentPopups": [
+    "assist",
+    "autoRedirected",
+    "customRedirected",
+    "ebookFinder",
+    "fullTextFinder",
+    "fullTextFinderAchieved",
+    "googleScholarSearchEnhanced",
+    "openAccess",
+    "openAccessAchieved",
+    "openAthensAccessPossible",
+    "orderForm",
+    "priorityAssist",
+    "proxyAccessPossible",
+    "pubMedSearchEnhanced",
+    "shibbolethAccessPossible"
+  ],
+  "meta": {
+    "generatedAt": "2025-05-27 17:30:10",
+    "version": 3
+  },
+  "onboardingTutorialUrl": "https://leanlibrary.zendesk.com/hc/en-gb/sections/17608202984093-Getting-started-as-an-Extension-User",
+  "academicBrowserOnboardingTutorialUrl": "https://www.easy-lms.com/library-access-in-the-academic-browser/course-52669",
+  "searchEngines": [],
+  "scite": {
+    "enabled": false,
+    "googleScholarEnabled": false,
+    "elsewhereEnabled": false
+  },
+  "zotero": {
+    "enabled": false
+  },
+  "enableLogging": true
+}
