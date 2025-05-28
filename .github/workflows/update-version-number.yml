@@ -1,0 +1,27 @@
+# Workflow for updating version number in a file
+name: Update version number
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update_flags:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Update Version Number
+        run: |
+          version=$(cat version-number)
+          new_version=$((version + 1))
+          echo $new_version > version-number
+      - name: Commit and Push Version Number
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add version-number
+          git commit -m "Increment version number to $new_version" || echo "No changes to commit"
+          git push
