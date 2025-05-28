@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update_flags:
+  update_version_number:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
